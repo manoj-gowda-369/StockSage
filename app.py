@@ -150,7 +150,8 @@ def render_stock_panel() -> None:
         max_chars=16,
         help="Enter a ticker symbol such as AAPL, MSFT, TSLA, or INFY.NS.",
     )
-    st.session_state.ticker = ticker.strip().upper()
+    # Ensure ticker is a string before calling strip() to satisfy type checkers
+    st.session_state.ticker = (ticker or "").strip().upper()
 
     if not st.session_state.ticker:
         st.caption("Enter a ticker to view market data.")
