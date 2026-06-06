@@ -6,6 +6,7 @@ StockSage is a simple Streamlit financial chatbot powered by the Google Gemini A
 
 - Financial education chatbot
 - Google Gemini 2.5 Flash API integration
+- Stock market data from yfinance
 - Session-based chat history
 - Clean Streamlit chat interface
 - Configurable response creativity
